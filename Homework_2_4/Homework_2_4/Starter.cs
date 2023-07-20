@@ -50,6 +50,12 @@ namespace Homework_2_4
             }
 
             Console.WriteLine(salad.MakeSalad());
+
+            Vegetable[] foundVegetables = listOfVegetables.FindVegetableByName("Tomato");
+            for (int i = 0; i < foundVegetables.Length; i++)
+            {
+                Console.WriteLine(foundVegetables[i].GetInfo());
+            }
         }
     }
 }
